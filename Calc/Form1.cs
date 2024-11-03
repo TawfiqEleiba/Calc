@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -85,6 +85,34 @@ namespace Calc
         private void button17_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            x = int.Parse(textBox1.Text);
+            textBox1.Text = x.ToString();
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            x = 0;
+            textBox1.Text = x.ToString();
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            x += int.Parse(textBox1.Text);
+            textBox1.Text = x.ToString();
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = x.ToString();
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1, 1);
         }
     }
     }
